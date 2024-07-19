@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.sidebarElements{
+    width: 0px;
+    height: 100%;
+    background-image:linear-gradient(45deg,hsl(0, 100%, 35%),hsl(0, 100%, 60%));
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    position: fixed;
+    overflow: auto;
+    font-family: 'Bebas Neue';
+
+}
+.sidebarElements a:hover ~ a{
+    filter: brightness(0.5);
+}
+.sidebarElements a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color:hsl(0 93% 4%);
+    text-decoration: none;
+    padding: 30px ;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.3s, filter 0.3s;
+    
+}
+.sidebarElements a:hover{
+    background-color:hsl(0, 100%, 40%);
+    color:hsl(0, 0%, 90%);
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.sidebartoggle{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+.toggleicon{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.dot{
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 70%;
+    margin: 3px;
+    transition: 0.3s;
+    background-color: black;
+}
+.change .toggleicon {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.change .dot1{
+    
+    transform:translate(10px,0px) rotateZ(-45deg);
+    border-radius: 0%;
+    width: 6px;
+    height: 25px;
+
+}
+.change .dot3{
+transform: translate(-10px,0px) rotateZ(45deg);
+    border-radius:0%;
+    width: 6px;
+    height:25px;
+}
+.change .dot2{
+    opacity: 0;
+}
+
