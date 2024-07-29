@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-    background: linear-gradient(-45deg,hsl(0, 100%, 50%),hsla(0, 96%, 57%, 0.96),hsla(17, 100%, 48%, 0.96),hsla(37, 100%, 50%, 0.96));
+    background: linear-gradient(-45deg,
+      hsla(0, 100%, 40%, 0.8),   /* Dark Red */
+      hsla(0, 100%, 50%, 0.8),   /* Red */
+      hsla(0, 100%, 60%, 0.8),   /* Light Red */
+      hsla(30, 100%, 50%, 0.8),  /* Orange */
+      hsla(60, 100%, 50%, 0.8),  /* Yellow */
+      hsla(0, 100%, 40%, 0.8)    /* Dark Red */
+  );
     animation:gradient 15s ease infinite ;
-    background-size: 400% 400%;
+    background-size: 1000% 1000%;
     margin: 0;
     padding: 0;
 }
@@ -88,7 +95,7 @@ body {
     margin: 3px;
     transition: 0.3s;
     background-color: rgb(0, 0, 0);
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 
@@ -111,3 +118,4 @@ body {
 .change .dot2 {
     opacity: 0;
 }
+
